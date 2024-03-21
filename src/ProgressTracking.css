@@ -1,0 +1,78 @@
+.progress-page-container {
+    display: flex;
+    min-height: 100vh; /* Full viewport height */
+  }
+  
+  .sidebar {
+    position: fixed; /* Optional: Fix the sidebar */
+    top: 0; /* Align the top edge of the sidebar with the top of the viewport */
+    left: 0; /* Align the left edge of the sidebar with the left of the viewport */
+    width: 250px; /* Sidebar width */
+    height: 100vh; /* Full viewport height */
+    /* Other sidebar styles... */
+  }
+  
+  .navbar {
+    position: fixed; /* Fix the navbar at the top of the viewport */
+    top: 0; /* Align the top edge of the navbar with the top of the viewport */
+    left: 250px; /* Align the left edge of the navbar to the right of the sidebar */
+    right: 0; /* Align the right edge of the navbar with the right of the viewport */
+    height: 60px; /* Height of the navbar */
+    background-color: #ffcc00; /* Yellow background */
+    padding: 0 10px; /* Padding on left and right */
+    z-index: 1000; /* Ensure the navbar is above other content */
+    /* Other navbar styles... */
+  }
+  
+  .main-content {
+    padding-top: 60px;
+    flex-grow: 1; /* Fill the remaining width */
+    display: flex;
+    flex-direction: column;
+    padding-top: 60px; /* Make space for navbar */
+    background-color: #e8f5e9; /* Background color of main content */
+  }
+  
+  .progress-container {
+    margin-top: 60px;
+    padding: 20px;
+    max-width: 900px; /* Maximum width */
+    width: 100%; /* Take full width of its container */
+    display: flex;
+    flex-direction: column; /* Stack children vertically */
+    align-items: center; /* Center children horizontally */
+    gap: 20px; /* Space between children */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+  }
+  
+  .stats-container {
+    text-align: center;
+    margin-bottom: 20px;
+    width: 100%; /* Ensure full width */
+  }
+  
+  .stats-section {
+    display: flex;
+    flex-direction: column; /* Stack stat items vertically */
+    width: 100%; /* Ensure full width */
+  }
+  
+  .stat-item {
+    background: #f7f7f7; /* Light grey background */
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  
+  .chart-container {
+    width: 100%; /* Ensure full width */
+    margin-top: 20px;
+  }
+  
+  /* Styling for ChartJS */
+  canvas {
+    padding: 20px;
+    max-width: 600px; /* Adjust for the size of the charts */
+    width: 100%; /* Responsive width */
+  }
+  

@@ -1,0 +1,17 @@
+.sidebar {
+    background-color: #006400; /* Dark green background */
+    width: 200px; /* Adjust width as needed */
+    height: 100vh; /* Full-height */
+  }
+  
+  .menu-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .menu-list li {
+    padding: 10px;
+    color: white; /* Adjust text color as needed */
+    border-bottom: 1px solid grey; /* Optional */
+  }
+  

@@ -1,0 +1,79 @@
+.confirmation-page-container {
+    display: flex;
+    min-height: 100vh;
+  }
+  
+  .main-section {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    
+  }
+  
+  .confirmation-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center vertically */
+    align-items: center; /* Center horizontally */
+    text-align: center; /* Center the text inside the confirmation content */
+    margin: auto; /* Additional centering for cross-browser compatibility */
+    padding: 40px; /* Increased padding for more space inside */
+    width: 80%; /* Increased width percentage of the container */
+    max-width: 700px; /* Optionally increase max width for larger screens */
+    box-sizing: border-box;
+    background: #fff; /* Assuming a white background */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  }
+  
+  /* ... rest of your confirmation page styles ... */
+  
+.confirmation-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 200vh;
+    background-color: #e8f5e9; /* Light green background */
+  }
+  
+  .confirmation-content {
+    text-align: center;
+    background-color: #ffffff;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+  }
+  
+  .confirmation-content h1 {
+    color: #388e3c; /* Dark green color */
+    margin-bottom: 1rem;
+    font-size: 2.5rem; /* Larger font size for the header */
+      
+  }
+  
+  .confirmation-content p {
+    font-size: 1.2rem; /* Larger font size for the paragraph */
+  }
+  
+  .button-group button {
+    background-color: #4caf50; /* Green color */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 0 5px;
+  }
+  
+  .button-group button:hover {
+    background-color: #43a047; /* Slightly darker green on hover */
+  }
+  
+  .confirmation-content .button-group button,
+.confirmation-content  {
+  padding: 15px 30px; /* Larger padding for bigger buttons */
+  font-size: 1.2rem; /* Larger font size for button text */
+  margin-top: 20px; /* Ensure there's space between the buttons */
+}

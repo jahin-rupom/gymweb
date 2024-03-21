@@ -1,0 +1,114 @@
+.activity-tracker-container {
+    display: flex;
+    min-height: 100vh;
+  }
+  
+  .main-section {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    padding-top: 60px; /* Make space for the fixed navbar */
+  }
+  
+  .activity-tracker-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Creates a responsive grid with a minimum column width of 250px */
+    gap: 20px; /* Space between cards */
+    justify-content: center; /* Center the grid */
+    padding: 20px;
+  }
+  
+  .workout-info {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    /* Remove width if previously set */
+  }
+  
+  .activity-tracker-content h1 {
+    margin-bottom: 20px;
+  }
+  
+  .workout-stat {
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background: #f2f2f2;
+    border-radius: 5px;
+  }
+  
+  .stat-label {
+    font-weight: bold;
+  }
+  
+  .stat-value {
+    font-style: italic;
+  }
+  
+  .workout-stat {
+    /* ... existing styles ... */
+    align-items: center; /* Align the icons with the text */
+  }
+  
+  .fa-icon {
+    margin-right: 10px; /* Add some space between the icon and the label */
+    font-size: 1.5rem; /* Adjust the icon size as needed */
+  } 
+  
+ 
+  /* Styles for your Navbar and Sidebar */
+  /* ... */
+  .activity-tracker-container {
+    display: flex;
+    min-height: 100vh;
+  }
+  
+  .main-section {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .workout-header {
+    text-align: center;
+    margin: 20px 0;
+  }
+  
+  .activity-tracker-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .workout-info {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 80%;
+    max-width: 600px;
+    margin-bottom: 20px;
+  }
+  
+  .workout-stat {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0;
+  }
+  
+  .workout-icon {
+    margin-right: 10px;
+    font-size: 2rem;
+  }
+  
+  .stat-label {
+    font-weight: bold;
+  }
+  
+  .stat-value {
+    font-style: italic;
+  }

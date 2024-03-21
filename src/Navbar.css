@@ -1,0 +1,12 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffcc00; /* Yellow background */
+    padding: 10px;
+  }
+  
+  .logo {
+    margin-left: 40px; /* Adjust the value as needed */
+  }
+  

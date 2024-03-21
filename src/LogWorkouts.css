@@ -1,0 +1,79 @@
+.log-workouts-container {
+  display: flex;
+  min-height: 100vh;
+}
+
+.main-section {
+  flex-grow: 1;
+  padding-top: 60px; /* Assuming the navbar is 60px tall */
+}
+
+.log-workouts-form-container {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+}
+
+.log-workouts-form-container h1 {
+  margin-bottom: 20px;
+}
+
+.log-workouts-form-container form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.log-workouts-form-container label {
+  display: flex;
+  flex-direction: column;
+}
+
+.log-workouts-form-container input {
+  padding: 10px;
+  margin-top: 5px;
+}
+
+.log-workouts-form-container button {
+  padding: 10px;
+  margin-top: 20px;
+  background-color: #4caf50; /* Green color, adjust as necessary */
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+/* Existing styles... */
+
+.duration-inputs {
+  display: flex;
+  gap: 10px; /* Adjust the space between the hour and minute inputs */
+}
+
+.duration-inputs label {
+  flex: 1; /* Each label takes equal space */
+}
+
+/* Styles for input fields for hours and minutes */
+.duration-inputs input {
+  padding: 10px;
+  margin-top: 5px;
+}
+
+.duration-container {
+  text-align: left;
+}
+
+.time-inputs {
+  display: flex;
+  gap: 10px; /* Spacing between hour and minute inputs */
+}
+
+.time-inputs input {
+  flex-basis: calc(50% - 5px); /* Subtract the gap from the total width */
+  padding: 10px;
+  margin-top: 5px;
+}/* ... Remaining styles... */
+
+/* Styles for the Navbar and Sidebar */
+/* ... */

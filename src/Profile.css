@@ -1,0 +1,82 @@
+.profile-page {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffcc00; /* Yellow background */
+    padding: 10px;
+    position: relative; /* Needed for absolute positioning of the menu icon */
+  }
+  
+  /* Add styles for the menu icon */
+  .menu-icon {
+    cursor: pointer;
+    font-size: 24px; /* Adjust as needed */
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 2;
+    display: block; /* This ensures the menu is always visible */
+  }
+  
+  .profile-content {
+    display: flex;
+    flex-grow: 1;
+  }
+  
+  .sidebar {
+    background-color: #006400; /* Dark green background */
+    width: 200px; /* Adjust width as needed */
+    height: 100vh; /* Full-height */
+    /* Start off-screen */
+  }
+  
+  /* When sidebar is visible */
+  .sidebar-open .sidebar {
+    transform: translateX(0); /* Slide in */
+  }
+  
+  .menu-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .menu-list li {
+    padding: 10px;
+    color: white; /* Adjust text color as needed */
+    border-bottom: 1px solid grey;
+  }
+  
+  .profile-info {
+    flex-grow: 1;
+    background-color: #008000; /* Green background */
+    color: white; /* White text */
+    padding: 20px;
+    overflow-y: auto; /* Add scrolling if content is too long */
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .menu-icon {
+      display: block; /* Show menu icon on smaller screens */
+    }
+  
+    .sidebar {
+      position: fixed; /* Fixed position for mobile */
+      z-index: 1; /* Ensure it's under the menu icon */
+      height: 100%; /* Full screen height */
+    }
+  
+    .profile-content {
+      flex-direction: column;
+    }
+  
+    /* Additional styling adjustments for mobile can go here */
+  }
+  
